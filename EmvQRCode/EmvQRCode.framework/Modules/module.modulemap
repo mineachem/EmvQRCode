@@ -1,0 +1,11 @@
+framework module EmvQRCode {
+  umbrella header "EmvQRCode.h"
+
+  export *
+  module * { export * }
+}
+
+module EmvQRCode.Swift {
+    header "EmvQRCode-Swift.h"
+    requires objc
+}
