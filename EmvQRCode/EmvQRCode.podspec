@@ -3,7 +3,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "EmvQRCode"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "it's a framework help developer can generate QRCode"
   spec.description  = "A framework for using generate QRCode"
   spec.homepage     = "https://github.com/mineachem/EmvQRCode"
