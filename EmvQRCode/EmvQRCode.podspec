@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/mineachem/EmvQRCode.git", :tag => "1.0.0" }
   spec.exclude_files = "Classes/Exclude"
   spec.ios.vendored_frameworks = "EmvQRCode.framework"
-  spec.source_files  = "Source/**/*.{h,m,swift}"
+  spec.source_files  = "Classes/**/*.{h,m,swift}"
   spec.swift_version       = "4.2"
 
   # spec.public_header_files = "Classes/**/*.h"
