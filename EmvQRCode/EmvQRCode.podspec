@@ -11,6 +11,8 @@ Pod::Spec.new do |spec|
   spec.author             = { "mineachem" => "minea.chem@gmail.com" }
   spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/mineachem/EmvQRCode.git", :tag => "#{spec.version}" }
+  spec.requires_arc = true
+  spec.preserve_paths = 'EmvQRCode.framework'
   spec.ios.vendored_frameworks = 'EmvQRCode.framework'
   spec.source_files  = "EmvQRCode/**/*.{h,m,swift}"
   spec.swift_version       = "4.2"
