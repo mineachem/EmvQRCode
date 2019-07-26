@@ -4,16 +4,16 @@
 Pod::Spec.new do |spec|
   spec.name         = "EmvQRCode"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of EmvQRCode."
+  spec.summary      = "it's a framework help developer can generate QRCode"
   spec.description  = "A framework for using generate QRCode"
   spec.homepage     = "https://github.com/mineachem/EmvQRCode"
   spec.license      = "MIT"
   spec.author             = { "mineachem" => "minea.chem@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/mineachem/EmvQRCode.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/mineachem/EmvQRCode.git", :tag => "1.0.0" }
   spec.exclude_files = "Classes/Exclude"
   spec.ios.vendored_frameworks = "EmvQRCode.framework"
-  spec.source_files  = "Classes/Exclude"
+  spec.source_files  = "Source/**/*.{h,m,swift}"
   spec.swift_version       = "4.2"
 
   # spec.public_header_files = "Classes/**/*.h"
