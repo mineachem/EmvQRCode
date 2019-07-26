@@ -12,9 +12,10 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/mineachem/EmvQRCode.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
-  spec.source_files  = "Classes/Exclude"
-  spec.ios.vendored_frameworks = 'EmvQRCode.framework'
-  spec.source_files  = "EmvQRCode/**/*.{h,m,swift}"
+  spec.public_header_files = "EmvQRCode/Framework/EmvQRCode.framework/Headers/*"
+  spec.preserve_paths = "EmvQRCode/Framework/*"
+  spec.ios.vendored_frameworks = "EmvQRCode/Framework/EmvQRCode.framework"
+  spec.source_files  = "EmvQRCode/**/*.{h,m,swift}","EmvQRCode/Classes/**/*","EmvQRCode/Framework/EmvQRCode.framework/Headers/*"
   spec.swift_version       = "4.2"
 
   # spec.public_header_files = "Classes/**/*.h"
